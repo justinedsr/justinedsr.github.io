@@ -1,0 +1,212 @@
+.illu {
+	height: 700px;
+	margin-bottom: 160px;
+}
+
+.row span:nth-child(odd) {
+	margin-top: 25px;
+}
+
+#back-button {
+	height: 50px;
+	width:50px;
+	margin-top: 10px;
+	margin-left: 100px;
+	transition: transform .4s;
+	-webkit-transition: -webkit-transform .4s;
+}
+
+#back-button-link:hover {
+	background-color: transparent;
+}
+
+a:hover #back-button {
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.containerproject {
+  margin-top: 200px;
+}
+
+.project {
+	margin-top: 15%;
+}
+
+nav.transparent {
+	box-shadow: none;
+}
+
+body {
+  padding: 30px 0;
+  position: relative;
+  background-image: url("../assets/img/Backgroundwhite.jpg");
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+#LOGO {
+   margin-top: 100px;
+   margin-left: -130px;
+}
+
+#illu1 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay:    1s;
+  -o-animation-delay:      1s;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+
+#illu2 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1250ms;
+  -webkit-animation-delay: 1250ms;
+  -moz-animation-delay:    1250ms;
+  -o-animation-delay:      1250ms;
+  margin-top: 100px;
+}
+
+#illu3 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1500ms;
+  -webkit-animation-delay: 1500ms;
+  -moz-animation-delay:    1500ms;
+  -o-animation-delay:      1500ms;
+  margin-top: 100px;
+}
+
+#illu4 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1750ms;
+  -webkit-animation-delay: 1750ms;
+  -moz-animation-delay:    1750ms;
+  -o-animation-delay:      1750ms;
+  margin-top: -100px;
+}
+
+#illu5 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2000ms;
+  -webkit-animation-delay: 2000ms;
+  -moz-animation-delay:    2000ms;
+  -o-animation-delay:      2000ms;
+}
+
+#illu6 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2250ms;
+  -webkit-animation-delay: 2250ms;
+  -moz-animation-delay:    2250ms;
+  -o-animation-delay:      2250ms;
+}
+
+#illu7 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2500ms;
+  -webkit-animation-delay: 2500ms;
+  -moz-animation-delay:    2500ms;
+  -o-animation-delay:      2500ms;
+}
+
+#illu8 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2750ms;
+  -webkit-animation-delay: 2750ms;
+  -moz-animation-delay:    2750ms;
+  -o-animation-delay:      2750ms;
+}
+
+#illu9 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         3000ms;
+  -webkit-animation-delay: 3000ms;
+  -moz-animation-delay:    3000ms;
+  -o-animation-delay:      3000ms;
+}
+
+.illu {
+	transform: scale(1);
+	transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.illu:hover {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

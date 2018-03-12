@@ -1,0 +1,224 @@
+body {
+  padding: 30px 0;
+  position: relative;
+    background-image: url("../assets/img/Backgroundwhite.jpg");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+a .surimpression-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+  margin: auto;
+}
+
+a .surimpression {
+  display: block !important;
+  width: 100%;
+  margin: auto;
+}
+
+a:hover .surimpression-container {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#projet1 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay:    1s;
+  -o-animation-delay:      1s;
+}
+
+#projet2 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1250ms;
+  -webkit-animation-delay: 1250ms;
+  -moz-animation-delay:    1250ms;
+  -o-animation-delay:      1250ms;
+}
+
+#projet3 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1500ms;
+  -webkit-animation-delay: 1500ms;
+  -moz-animation-delay:    1500ms;
+  -o-animation-delay:      1500ms;
+}
+
+#projet4 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1750ms;
+  -webkit-animation-delay: 1750ms;
+  -moz-animation-delay:    1750ms;
+  -o-animation-delay:      1750ms;
+}
+
+#projet5 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2000ms;
+  -webkit-animation-delay: 2000ms;
+  -moz-animation-delay:    2000ms;
+  -o-animation-delay:      2000ms;
+}
+
+#projet6 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2250ms;
+  -webkit-animation-delay: 2250ms;
+  -moz-animation-delay:    2250ms;
+  -o-animation-delay:      2250ms;
+}
+
+#projet7 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2500ms;
+  -webkit-animation-delay: 2500ms;
+  -moz-animation-delay:    2500ms;
+  -o-animation-delay:      2500ms;
+}
+
+#projet8 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         2750ms;
+  -webkit-animation-delay: 2750ms;
+  -moz-animation-delay:    2750ms;
+  -o-animation-delay:      2750ms;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gallery {
+  width: 600px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 3px;
+  overflow: hidden;
+  //position: relative;
+}
+.img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+nav.transparent{
+  box-shadow: none;
+}
+
+#LOGO {
+   margin-top: 70px;
+   margin-left: -50px;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  //transform: translateX(-50%);
+}
+
+.img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
+}
