@@ -213,7 +213,7 @@ nav.transparent{
 /*
 ** ANIMATIONS
  */
-#projet1 {
+.projet1 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -225,7 +225,7 @@ nav.transparent{
   -o-animation-delay:      1s;
 }
 
-#projet2 {
+.projet2 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -237,7 +237,7 @@ nav.transparent{
   -o-animation-delay:      1250ms;
 }
 
-#projet3 {
+.projet3 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -249,7 +249,7 @@ nav.transparent{
   -o-animation-delay:      1500ms;
 }
 
-#projet4 {
+.projet4 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -261,7 +261,7 @@ nav.transparent{
   -o-animation-delay:      1750ms;
 }
 
-#projet5 {
+.projet5 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -273,7 +273,7 @@ nav.transparent{
   -o-animation-delay:      2000ms;
 }
 
-#projet6 {
+.projet6 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -285,7 +285,7 @@ nav.transparent{
   -o-animation-delay:      2250ms;
 }
 
-#projet7 {
+.projet7 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -297,7 +297,7 @@ nav.transparent{
   -o-animation-delay:      2500ms;
 }
 
-#projet8 {
+.projet8 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
