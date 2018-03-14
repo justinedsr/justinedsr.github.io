@@ -40,6 +40,13 @@ section {
   right:      0;
 }
 
+@media only screen and (max-width: 600px) {
+  .footer {
+    position:   inherit;
+    margin-top: 20px;
+  }
+}
+
 .triangle {
   opacity: 0.6;
 }

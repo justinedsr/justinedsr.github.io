@@ -61,8 +61,14 @@ nav.transparent{
 }
 
 #LOGO {
-   margin-top: 70px;
-   margin-left: -50px;
+  margin-top: 70px;
+  margin-left: -50px;
+}
+@media only screen and (max-width: 600px) {
+  #LOGO {
+    margin-top: 70px;
+    margin-left: 0;
+  }
 }
 
 .img-w img {
@@ -130,6 +136,10 @@ nav.transparent{
   background-image: url('../assets/projects/CUBI.png');
 }
 
+.cubi .title {
+  margin-top: 80px;
+}
+
 .circus-vilain .img-c {
   height: 250px;
   width:  250px;
@@ -144,6 +154,12 @@ nav.transparent{
   display:          flex;
   height:           200px;
   justify-content:  flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .circus-vilain .title-container {
+    height: auto;
+  }
 }
 
 .hophophop .img-c {
@@ -340,11 +356,23 @@ nav.transparent{
   width:            2.5px;
 }
 
+#line1-small {
+  background-color: #20535F;
+  height:           100px;
+  width:            2px;
+}
+
 #line2 {
   background-color: #20535F;
   height:           2.5px;
   margin-top:       60px;
   width:            100px;
+}
+
+#line2-small {
+  background-color: #20535F;
+  height:           2px;
+  margin-top:       35px;
 }
 
 #line3 {
@@ -360,9 +388,27 @@ nav.transparent{
   transform:          rotate(-45deg);
 }
 
+#line3-small {
+  background-color:   #20535F;
+  height:             2px;
+  margin-top:         30px;
+
+  -webkit-transform:  rotate(-45deg);
+  -moz-transform:     rotate(-45deg);
+  -o-transform:       rotate(-45deg);
+  transform:          rotate(-45deg);
+}
+
 #line4 {
   background-color: #20535F;
   height:           2.5px;
+  margin-left:      25px;
+  width:            100px;
+}
+
+#line4-small {
+  background-color: #20535F;
+  height:           2px;
   margin-left:      25px;
   width:            100px;
 }
@@ -379,6 +425,18 @@ nav.transparent{
   transform:          rotate(-90deg);
 }
 
+@media only screen and (max-width: 600px) {
+  #line5 {
+    background-color:   #20535F;
+    height:             2px;
+    margin-top:         20px;
+
+    -webkit-transform:  rotate(-90deg);
+    -moz-transform:     rotate(-90deg);
+    -o-transform:       rotate(-90deg);
+    transform:          rotate(-90deg);
+  }
+}
 /*
 ** TEXT
  */
