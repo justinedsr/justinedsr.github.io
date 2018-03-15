@@ -1,10 +1,13 @@
+/*
+** Base
+ */
+
 .illu {
-	height: 700px;
-	margin-bottom: 160px;
+	padding: 0 !important;
 }
 
-.row span:nth-child(odd) {
-	margin-top: 25px;
+.illu-container {
+  padding: 2px !important;
 }
 
 #back-button {
@@ -14,6 +17,20 @@
 	margin-left: 100px;
 	transition: transform .4s;
 	-webkit-transition: -webkit-transform .4s;
+}
+@media only screen and (max-width: 993px) and (min-width: 601px) {
+  #back-button {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #back-button {
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-left: 25px;
+  }
 }
 
 #back-button-link:hover {
@@ -27,7 +44,7 @@ a:hover #back-button {
 	transform: rotate(-45deg);
 }
 
-.containerproject {
+.container.project {
   margin-top: 200px;
 }
 
@@ -42,15 +59,10 @@ nav.transparent {
 body {
   padding: 30px 0;
   position: relative;
-  background-image: url("../assets/img/Backgroundwhite.jpg");
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
 }
 
 #LOGO {
-   margin-top: 100px;
-   margin-left: -130px;
+   margin-top: 70px;
 }
 
 #illu1 {
@@ -63,8 +75,6 @@ body {
   -webkit-animation-delay: 1s;
   -moz-animation-delay:    1s;
   -o-animation-delay:      1s;
-  margin-top: 300px;
-  margin-right: 200px;
 }
 
 #illu2 {
@@ -77,7 +87,6 @@ body {
   -webkit-animation-delay: 1250ms;
   -moz-animation-delay:    1250ms;
   -o-animation-delay:      1250ms;
-  margin-top: 100px;
 }
 
 #illu3 {
@@ -90,7 +99,6 @@ body {
   -webkit-animation-delay: 1500ms;
   -moz-animation-delay:    1500ms;
   -o-animation-delay:      1500ms;
-  margin-top: 100px;
 }
 
 #illu4 {
@@ -103,7 +111,6 @@ body {
   -webkit-animation-delay: 1750ms;
   -moz-animation-delay:    1750ms;
   -o-animation-delay:      1750ms;
-  margin-top: -100px;
 }
 
 #illu5 {
@@ -172,12 +179,6 @@ body {
 	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
 }
 
-.illu:hover {
-  transform: scale(1.08);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
-	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
-}
-
 @keyframes fadein {
     from {
         opacity:0;
@@ -209,4 +210,18 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/*
+** Text
+ */
+
+.title {
+  letter-spacing: 1px;
+  font-family:    Optima, Roboto, sans-serif;
+  color:          #36757D;
+  font-size:      45px;
+  font-weight:    bolder;
+  text-align:     center;
+  margin-bottom:  100px;
 }

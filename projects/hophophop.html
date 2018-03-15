@@ -12,47 +12,62 @@
    </head>
 
    <body>
-
      <nav class="transparent">
-       <div class="nav-wrapper center-align">
+       <div class="nav-wrapper">
          <ul id="nav-mobile" class="left">
            <li><a href="./index.html" id="back-button-link"><img class="retour" id="back-button" src="../assets/img/retour.png" /></a></li>
          </ul>
 
          <!-- N'oublie pas les ../ devant l'adresse vu que tu es dans un dossier ! -->
-         <a href="../index.html" class="brand-logo"><img id="LOGO" height="50" src="../assets/img/LOGOVERT.png"/></a>
+         <a href="../index.html" class="brand-logo center">
+           <img id="LOGO" height="50" src="../assets/img/LOGOVERT.png"/>
+         </a>
        </div>
      </nav>
 
      <div class="container project">
-       <div class="illus">
-         <div class="row">
-           <span class="col s12 m6 left-align">
-             <img class="illu" id="illu1" src="../assets/imghophophop/title.pdf" alt="" />
-           </span>
-           <span class="col s12 m6 right-align">
-             <img class="illu" id="illu2" src="../assets/imghophophop/img1.pdf" alt="" />
-           </span>
-         </div>
-         <div class="row">
-           <span class="col s12 m6 left-align">
-             <img class="illu" id="illu3" src="../assets/imghophophop/img2.pdf" alt="" />
-           </span>
-           <span class="col s12 m6 right-align">
-             <img class="illu" id="illu4" src="../assets/imghophophop/img3.pdf" alt="" />
-           </span>
-         </div>
-         <div class="row">
-           <span class="col s12 m12 center">
-             <img class="illu" id="illu5" src="../assets/imghophophop/img4.pdf" alt="" />
-           </span>
+       <div class="row">
+         <span class="col s12 title">HOP HOP HOP</span>
+       </div>
+
+       <div class="row">
+         <div class="col offset-l2 l8 m12 s12">
+           <div class="illus">
+             <div class="row">
+               <span class="col s6 m3 illu-container">
+                 <img class="col illu s12 materialboxed" id="illu1" src="../assets/imghophophop/img1.png" alt="" />
+               </span>
+
+               <span class="col s6 m3 illu-container">
+                 <img class="col illu s12 materialboxed" id="illu2" src="../assets/imghophophop/img2.png" alt="" />
+               </span>
+
+               <span class="col s6 m3 illu-container">
+                 <img class="col illu s12 materialboxed" id="illu3" src="../assets/imghophophop/img3.png" alt="" />
+               </span>
+
+               <span class="col s6 m3 illu-container">
+                 <img class="col illu s12 materialboxed" id="illu4" src="../assets/imghophophop/img4.png" alt="" />
+               </span>
+             </div>
+
+             <div class="row" style="margin-bottom: 200px">
+               <span class="col s12 m12">
+                 <img class="col illu s12 materialboxed" id="illu5" src="../assets/imghophophop/img5.png" alt="" />
+               </span>
+             </div>
+           </div>
          </div>
        </div>
      </div>
 
-
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <script type="text/javascript" src="../js/materialize.min.js"></script>
+     <script>
+       $(document).ready(function(){
+         $('.materialboxed').materialbox();
+       });
+     </script>
    </body>
  </html>
