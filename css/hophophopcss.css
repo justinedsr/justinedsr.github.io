@@ -33,6 +33,16 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .illu-container {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+}
+
 #back-button-link:hover {
 	background-color: transparent;
 }
@@ -71,13 +81,37 @@ body {
   -moz-animation:    fadein 500ms forwards;
   -o-animation:      fadein 500ms forwards;
   animation:         fadein 500ms forwards;
-  animation-delay:         1s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay:    1s;
-  -o-animation-delay:      1s;
+  animation-delay:         500ms;
+  -webkit-animation-delay: 500ms;
+  -moz-animation-delay:    500ms;
+  -o-animation-delay:      500ms;
 }
 
 #illu2 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         750ms;
+  -webkit-animation-delay: 750ms;
+  -moz-animation-delay:    750ms;
+  -o-animation-delay:      750ms;
+}
+
+#illu3 {
+  opacity: 0;
+  -webkit-animation: fadein 500ms forwards;
+  -moz-animation:    fadein 500ms forwards;
+  -o-animation:      fadein 500ms forwards;
+  animation:         fadein 500ms forwards;
+  animation-delay:         1000ms;
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay:    1000ms;
+  -o-animation-delay:      1000ms;
+}
+
+#illu4 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -89,7 +123,7 @@ body {
   -o-animation-delay:      1250ms;
 }
 
-#illu3 {
+#illu5 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -101,7 +135,7 @@ body {
   -o-animation-delay:      1500ms;
 }
 
-#illu4 {
+#illu6 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -113,7 +147,7 @@ body {
   -o-animation-delay:      1750ms;
 }
 
-#illu5 {
+#illu7 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -125,7 +159,7 @@ body {
   -o-animation-delay:      2000ms;
 }
 
-#illu6 {
+#illu8 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -137,7 +171,7 @@ body {
   -o-animation-delay:      2250ms;
 }
 
-#illu7 {
+#illu9 {
   opacity: 0;
   -webkit-animation: fadein 500ms forwards;
   -moz-animation:    fadein 500ms forwards;
@@ -147,30 +181,6 @@ body {
   -webkit-animation-delay: 2500ms;
   -moz-animation-delay:    2500ms;
   -o-animation-delay:      2500ms;
-}
-
-#illu8 {
-  opacity: 0;
-  -webkit-animation: fadein 500ms forwards;
-  -moz-animation:    fadein 500ms forwards;
-  -o-animation:      fadein 500ms forwards;
-  animation:         fadein 500ms forwards;
-  animation-delay:         2750ms;
-  -webkit-animation-delay: 2750ms;
-  -moz-animation-delay:    2750ms;
-  -o-animation-delay:      2750ms;
-}
-
-#illu9 {
-  opacity: 0;
-  -webkit-animation: fadein 500ms forwards;
-  -moz-animation:    fadein 500ms forwards;
-  -o-animation:      fadein 500ms forwards;
-  animation:         fadein 500ms forwards;
-  animation-delay:         3000ms;
-  -webkit-animation-delay: 3000ms;
-  -moz-animation-delay:    3000ms;
-  -o-animation-delay:      3000ms;
 }
 
 .illu {
