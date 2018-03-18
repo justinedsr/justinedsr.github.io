@@ -73,14 +73,14 @@
 
         <div id="about-me-text" class="col offset-m3 offset-s1 m4 s10">
           <span class="text-base">
-            HEY THERE!
-            YOU ARE INDEED IN MY WEB SITE NOW SO YOU CAN'T REVERSE! (I HOPE YOU DON'T)
-            I'M A GRAPHIC DESIGNER OF 21 YEARS OLD WHO IS ALWAYS THIRST OF DICOVERY.
-            CAN'T WAIT YOU TO DISCOVER MY PROJECTS!<br>
+            Hey you!
+            You are indeed in in my website now so you can't reverse! (I HOPE YOU DON'T)
+            I'm a graphic designer of <span id="age"></span> years old who is always thirst of discovery.
+            Can't wait you to discover my projects!<br>
           </span>
 
           <div class="text-base text-center">
-            SEE YOU!<br>
+            See you! (I HOPE!)<br>
             JUSTINE DESIRE.
           </div>
         </div>
@@ -88,15 +88,15 @@
 
       <section id="contact-me" class="row">
         <div class="row">
-          <div class="col m2 offset-m1 s12 flex column align-center">
-            <div class="title">CONTACT ME</div>
+          <div class="col m3 offset-m1 s12 flex column align-center">
+            <div class="col title">CONTACT ME</div>
 
             <div class="subtitle">(I'M A GOOD PERSON)</div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col offset-m1 m2 flex justify-center hide-on-small-and-down">
+          <div class="col offset-m1 m3 flex justify-center hide-on-small-and-down">
             <div id="contact-me-line"></div>
           </div>
         </div>
@@ -149,5 +149,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
+    <script>
+      const birthdate = new Date(1996, 2, 20);
+      document.getElementById('age').innerHTML = `${new Date().getFullYear() - birthdate.getFullYear()}`;
+    </script>
   </body>
 </html>
