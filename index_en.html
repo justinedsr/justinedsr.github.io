@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>JussVibes</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <!--Import Google Icon Font-->
     <!-- link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" -->
     <!--Import materialize.css-->
@@ -40,7 +41,7 @@
       <nav class="transparent container big-categories">
         <ul class="categories row">
           <li class="col s12 m4" id="category1">
-            <a href="projects/index.html" class="button">
+            <a href="projects/index_en.html" class="button">
               <span class="button-content">
                 PROJECTS
                 <span id="image1" class="image-logo"></span>
@@ -49,7 +50,7 @@
           </li>
 
           <li class="col s12 m4" id="category2">
-            <a href="photography/index.html" class="button">
+            <a href="photography/index_en.html" class="button">
               <span class="button-content">
                 PHOTOGRAPHY
                 <span id="image2" class="image-logo"></span>
@@ -58,9 +59,9 @@
           </li>
 
           <li class="col s12 m4" id="category3">
-            <a class="button" href="">
+            <a class="button" href="https://www.youtube.com/channel/UCvBDUkQwAOPsrXABHdIon6Q">
               <span class="button-content">
-                VIDEO
+                YOUTUBE
                 <span id="image3" class="image-logo"></span>
               </span>
             </a>
@@ -153,7 +154,7 @@
     <script type="text/javascript" src="js/home.js"></script>
     <script type="text/javascript">
       const birthdate = new Date(1996, 2, 20);
-      document.getElementById('age').innerHTML = `${new Date().getFullYear() - birthdate.getFullYear()}`;
+      document.getElementById('age').innerHTML = '' + (new Date().getFullYear() - birthdate.getFullYear());
     </script>
   </body>
 </html>
