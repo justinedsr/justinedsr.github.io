@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>JussVibes</title>
+    <!--Import Google Icon Font-->
+    <!-- link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/customize.css"  media="screen,projection"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <div id="home">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo left hide-on-small-and-down">
+              <img id="LOGO" height="40" src="assets/img/LOGO.png"/>
+            </a>
+
+            <a href="#home" class="brand-logo center hide-on-med-and-up">
+              <img id="CENTERED-LOGO" height="40" src="assets/img/LOGO.png"/>
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-small-and-down">
+              <li><a href="#about-me" class="button-navbar">ABOUT ME</a></li>
+
+              <li><a href="#contact-me" class="button-navbar">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <nav class="transparent container big-categories">
+        <ul class="categories row">
+          <li class="col s12 m4" id="category1">
+            <a href="projects/index.html" class="button">
+              <span class="button-content">
+                PROJECTS
+                <span id="image1" class="image-logo"></span>
+              </span>
+            </a>
+          </li>
+
+          <li class="col s12 m4" id="category2">
+            <a href="photography/index.html" class="button">
+              <span class="button-content">
+                PHOTOGRAPHY
+                <span id="image2" class="image-logo"></span>
+              </span>
+            </a>
+          </li>
+
+          <li class="col s12 m4" id="category3">
+            <a class="button" href="">
+              <span class="button-content">
+                VIDEO
+                <span id="image3" class="image-logo"></span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="second-background">
+      <section id="about-me" class="row flex">
+        <div id="about-me-line" class="col offset-m2 m2 hide-on-small-and-down"></div>
+
+        <div id="about-me-text" class="col offset-m3 offset-s1 m4 s10">
+          <span class="text-base">
+            Hey you!
+            You are indeed in in my website now so you can't reverse! (I HOPE YOU DON'T)
+            I'm a graphic designer of <span id="age">22</span> years old who is always thirst of discovery.
+            Can't wait you to discover my projects!<br>
+          </span>
+
+          <div class="text-base text-center">
+            See you! (I HOPE!)<br>
+            JUSTINE DESIRE.
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-me" class="row">
+        <div class="row">
+          <div class="col m3 offset-m1 s12 flex column align-center">
+            <div class="col title">CONTACT ME</div>
+
+            <div class="subtitle">(I'M A GOOD PERSON)</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col offset-m1 m3 flex justify-center hide-on-small-and-down">
+            <div id="contact-me-line"></div>
+          </div>
+        </div>
+
+        <div class="row footer">
+          <div class="row">
+            <div class="col s12 flex align-center column">
+              <a id="contact-me-text" href="mailto:justine.desire.a@gmail.com">
+                Justine.desire.a@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="flex justify-center">
+              <a
+                class="btn-floating waves-effect waves-light black btn-footer"
+                href="https://www.youtube.com/channel/UCvBDUkQwAOPsrXABHdIon6Q"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+
+              <a
+                class="btn-floating waves-effect waves-light black btn-footer"
+                href="https://www.linkedin.com/in/justinedesire/"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                class="btn-floating waves-effect waves-light black btn-footer"
+                href="https://www.behance.net/justinedesa3d1"
+              >
+                <i class="fab fa-behance"></i>
+              </a>
+
+              <a
+                class="btn-floating waves-effect waves-light black"
+                href="https://www.instagram.com/justinedsire/"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript">
+      const birthdate = new Date(1996, 2, 20);
+      document.getElementById('age').innerHTML = `${new Date().getFullYear() - birthdate.getFullYear()}`;
+    </script>
+  </body>
+</html>
