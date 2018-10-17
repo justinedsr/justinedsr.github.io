@@ -7,8 +7,9 @@
 
   <body style="background-color: #262626;">
     <video
+      id="video"
       autoplay
-      src="https://jussvibes.github.io/vitamines/vitamines-raisin.mp4"
+      src="./vitamines-raisin.mp4"
       type="video/mp4"
       class="media-document mac video"
       loop
@@ -22,5 +23,11 @@
       "
     >
     </video>
+
+    <script>
+      var myVideo = document.getElementById("video");
+      if (myVideo.paused)
+        myVideo.play();
+    </script>
   </body>
 </html>
